@@ -247,10 +247,13 @@ img {
 .item-icon {
 	width: 70px;
 	height: 70px;
-	margin: 25px 100px;
 }
 
 .item-bgd {
+	display: flex;
+	height: 120px;
+	justify-content: center;
+	align-items: center;
 	background: #f5f4fa;
 	border-radius: 4px;
 }
@@ -289,7 +292,6 @@ img {
 
 .secondary-background {
 	background-color: var(--background-color);
-	max-width: 1600px;
 	margin: 0 auto;
 }
 
@@ -301,7 +303,7 @@ img {
 .team .card {
 	padding: 30px 32px;
 
-	background-color: var(--background-color);
+	background-color: var(--white-color);
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 		0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
@@ -330,7 +332,7 @@ img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 10x;
+	/* gap: 10x; */
 }
 
 .socials-link {
@@ -343,10 +345,15 @@ img {
 	fill: #afb1b8;
 }
 
+.socials-item:not(:last-child) {
+	margin-right: 10px;
+}
+
 .socials-link:hover,
 .socials-link:focus {
 	background-color: var(--button-background-hover);
 	fill: var(--white-color);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /* Наша команда */
@@ -379,7 +386,6 @@ img {
 /* Футер */
 
 .footer {
-	max-width: 1600px;
 	margin: 0 auto;
 	padding: 60px 0;
 	background-color: var(--footer-background-color);
@@ -434,6 +440,16 @@ img {
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: #ffffff;
+}
+
+.footer-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	fill: var(--white-color);
 }
 
 .socials-list {
